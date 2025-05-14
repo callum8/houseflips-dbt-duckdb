@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: external_source
+    meta:
+      external_location: "s3://duckdb-dbt-flips/output.parquet"
+    tables:
+      - name: output
+  - name: source_prop_data
+    meta:
+      external_location: "s3://duckdb-dbt-flips/source_data/*"
+    tables:
+      - name: source_prop_data      

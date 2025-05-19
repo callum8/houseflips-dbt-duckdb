@@ -20,19 +20,10 @@ COPY flips/macros ./macros
 COPY flips/snapshots ./snapshots
 
 
-# Create the .dbt directory
-# RUN mkdir -p /root/.dbt
 
 RUN mkdir -p /app/duck_db_files
 
-# Copy the dbt profiles.yml file into the container
-# COPY flips/profiles.yml /root/.dbt/profiles.yml
 
-# COPY dbt_project.yml /app/flips/dbt_project.yml
-
-# Copy the dbt_project.yml file into the container
-# COPY flips/dbt_project.yml /app/flips/dbt_project.yml
-# COPY flips/profiles.yml /root/.dbt/profiles.yml
 
 # Set the entrypoint for the container
 ENTRYPOINT ["dbt"]

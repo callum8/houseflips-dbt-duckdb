@@ -3,3 +3,9 @@ target/
 dbt_packages/
 logs/
 .user.yml
+duck_db_files/*
+terraform.tfstate
+terraform.tfstate.backup
+terraform/.terraform
+terraform.lock.hcl
+terraform/.terraform.lock.hcl

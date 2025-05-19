@@ -2,7 +2,7 @@ flips:
   outputs:
     dev:
       type: duckdb
-      path: library.db
+      path: duck_db_files/flips.db
       extensions:
         - httpfs
         - parquet

@@ -1,0 +1,10 @@
+provider "aws" {
+  region = "eu-west-1"
+}
+
+
+# this type of resource (i.e. aws_apigatewayv2_api is for Websocket and HTTP apis)
+resource "aws_apigatewayv2_api" "lambda-api" {
+  name          = "test_http_api"
+  protocol_type = "HTTP"
+}
